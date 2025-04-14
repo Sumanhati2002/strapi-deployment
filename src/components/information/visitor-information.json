@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_information_visitor_informations",
+  "info": {
+    "displayName": "Visitor Information",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "opening_hours": {
+      "type": "string"
+    },
+    "entry_fee": {
+      "type": "string"
+    },
+    "contact_information": {
+      "type": "string"
+    }
+  }
+}

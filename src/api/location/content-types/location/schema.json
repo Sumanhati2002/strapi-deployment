@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "singularName": "location",
+    "pluralName": "locations",
+    "displayName": "Location"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "locationname": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "gallery": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Visitor_Information": {
+      "type": "dynamiczone",
+      "components": [
+        "information.visitor-information"
+      ]
+    },
+    "image": {
+      "type": "string"
+    },
+    "state": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::state.state",
+      "inversedBy": "state_locations"
+    }
+  }
+}
